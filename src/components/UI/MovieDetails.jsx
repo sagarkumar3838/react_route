@@ -1,5 +1,6 @@
 import {   useLoaderData} from "react-router-dom";
 import { GetMovieDetails } from "../../api/GetMovieDetails";
+import styled from 'styled-components';
 
 
 export const MovieDetails =()=>{
@@ -9,50 +10,128 @@ export const MovieDetails =()=>{
     const movieData = useLoaderData();
      console.log(movieData);
 
+    const {Actors , Poster, Title , Type , Year ,Plot, BoxOffice, imdbID , Genre , imdbRating , Writer , Runtime , totalSeasons} = movieData;
+
 
     return(
         <>
-        <li class="wrapper">
-    <div class="main_card bg-gradient-to-r from-green-400 to-cyan-400 shadow-lg text-white w-full max-w-[760px] h-[390px] mx-auto my-12 flex">
-        <div class="card_left w-9/12">
-            <div class="card_datails w-9/12 p-8 mt-[-25px]">
-                <h1 class="text-2xl font-bold">Mission: Impossible – Fallout</h1>
-                <div class="card_cat flex justify-between">
-                    <p class="PG bg-green-300 shadow-md rounded-full px-3 py-1 font-bold">PG - 13</p>
-                    <p class="year font-bold">2018</p>
-                    <p class="genre font-bold">Action | Adventure</p>
-                    <p class="time font-bold">2h 28m</p>
-                </div>
-                <p class="disc font-light leading-7">Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.</p>
-                <a href="https://www.imdb.com/title/tt4912910/" target="_blank" class="text-cyan-700 block">Read More</a>
-                <div class="social-btn flex mt-8">
-                    <button class="bg-green-300 text-white py-4 px-6 rounded-lg shadow-md transition-transform transform hover:scale-110">
-                        <i class="fas fa-play"></i> SEE TRAILER
-                    </button>
-                    <button class="bg-green-300 text-white py-4 px-6 rounded-lg shadow-md transition-transform transform hover:scale-110 ml-2">
-                        <i class="fas fa-download"></i> DOWNLOAD
-                    </button>
-                    <button class="bg-green-300 text-white py-4 px-6 rounded-lg shadow-md transition-transform transform hover:scale-110 ml-2">
-                        <i class="fas fa-thumbs-up"></i> 97%
-                    </button>
-                    <button class="bg-green-300 text-white py-4 px-6 rounded-lg shadow-md transition-transform transform hover:scale-110 ml-2">
-                        <i class="fas fa-star"></i>
-                    </button>
-                </div>
-            </div>
+        
+        <li>
+
+        <StyledWrapper className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div className="flip flex justify-center items-center h-screen ">
+    <div className="content relative"> {/* Add relative positioning to the content */}
+      <div className="front w-[390px] h-[374px] relative"> {/* Add relative positioning to the front */}
+        <img src={Poster} alt={Title} className="absolute inset-0 w-full h-full object-cover rounded-md" />
+        <button class=" z-5 ml-4 absolute bg-[rgba(139,137,137,0.25)] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[9.5px] rounded-[10px] border border-[rgba(255,255,255,0.18)] py-4 px-5   font-extrabold mb-2 mt-52">{Title}</button>
+        <h2 className="absolute z-10  text-zinc-100 ml-4  mt-[270px] font-bold text-xl ">Ratings: {imdbRating}</h2>
+        <h2 className="absolute z-10  text-zinc-100  mt-[300px] ml-4 text-xl">Genre:{Genre}</h2> 
+
+      
+
+      </div>
+      <div className="back text-blue-600">
+
+      <div class="glass-toolbar flex justify-between mt-4">
+            <button class="bg-[rgba(139,137,137,0.25)] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[9.5px] rounded-[10px] border border-[rgba(255,255,255,0.18)] py-4 px-5 mt-2 ml-2 font-extrabold mb-2">YEAR:{Year}</button>
+            <button class="bg-[rgba(139,137,137,0.25)] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[9.5px] rounded-[10px] border border-[rgba(255,255,255,0.18)] py-4 px-5 mt-2 mr-2 font-extrabold mb-2">SEASONS:{totalSeasons}</button>
+            
+           
         </div>
-        <div class="card_right w-3/12">
-            <div class="img_container">
-                <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/MI_%E2%80%93_Fallout.jpg" alt="" class="h-full rounded-md"/>
-            </div>
-            {/* <div class="play_btn h-full mx-auto relative text-center bg-green-300 bg-opacity-40 shadow-sm">
-                <a href="https://www.imdb.com/title/tt4912910/" target="_blank">
-                    <i class="fas fa-play-circle text-green-800 text-6xl mt-24 animate-bounce"></i>
-                </a>
-            </div> */}
-        </div>
+        <button class="bg-[rgba(139,137,137,0.25)] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[9.5px] rounded-[10px] border border-[rgba(255,255,255,0.18)] py-4 px-5 mt-2  font-extrabold mb-2 leading-5">ACTORS:{Actors}</button>
+
+      
+        <p className="overflow-y-hidden">{Plot}</p>
+      </div>
     </div>
-</li>
-        </>
+  </div>
+</StyledWrapper>
+
+        </li>
+</>
     )
 }
+
+const StyledWrapper = styled.div`
+  .flip {
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    padding: 1em;
+    width: 390px;
+    height: 354px;
+    transform-style: preserve-3d;
+    transition: 3s ease;
+  }
+
+  .flip:hover {
+    transform: rotateY(180deg);
+  }
+  /* Content */
+  .flip .content {
+    transform-style: preserve-3d;
+  }
+
+  .flip .back, .flip .front {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+
+  .flip .back {
+    transform: rotateY(180deg);
+    
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .flip h2,
+  .flip p {
+    transform: translateZ(90px);
+    text-shadow: transparent;
+    text-align: center;
+  }
+
+  .flip h2 {
+    
+    
+    letter-spacing: 1px;
+  }
+
+  .flip p {
+    font-size: 1em;
+ 
+    line-height: 1.6em;
+  }
+
+  .flip::before,
+  .flip::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    
+    
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg)translateZ(1px);
+  }
+
+  .flip::before {
+    transform: none;
+    
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }`;
+ 
