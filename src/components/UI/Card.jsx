@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Card = ({ m }) => {
@@ -56,8 +57,10 @@ export const Card = ({ m }) => {
                             </button>
                         </div>
                         <div className="view-more">
-                            <button className="view-more-button">View more</button>
-                            <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                          <NavLink to={`/movie/${imdbID}`}>
+                          <button className="view-more-button">View more</button>
+                          <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                          </NavLink>
                         </div>
                     </div>
                 </div>

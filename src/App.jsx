@@ -6,10 +6,12 @@ import {Contact} from './pages/Contact'
 import {Portfolio}  from "./pages/Portfolio"
 import {Service}  from "./pages/Service"
 import {Movie}  from "./pages/Movie"
+import { MovieDetails } from './components/UI/MovieDetails'
 import AppLayout from './components/layout/AppLayout'
 import { ErrorPage } from './pages/ErrorPage'
 
 import { GetApiData } from './api/GetApiData'
+import { GetMovieDetails } from './api/GetMovieDetails'
 
 
 const App = () => {
@@ -48,6 +50,11 @@ const App = () => {
           path: "/movie",
           element: <Movie />,
           loader: GetApiData,
+        },
+        {
+          path: "/movie/:movieID",
+          element: <MovieDetails />,
+          loader: GetMovieDetails,
         },
         
 
