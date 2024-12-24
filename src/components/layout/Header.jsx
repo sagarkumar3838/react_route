@@ -54,7 +54,7 @@ export const Header = () => {
                                         <NavLink to="/movie" className={`block px-8 border-y-1 py-2 text-sm ${theme === "dark" ? "text-gray-200 hover:bg-gray-600" : "text-gray-700 hover:bg-gray-100"}`}>Movie</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/portfolio" className={`block px-8 border-y-1 py-2 text-sm ${theme === "dark" ? "text-gray-200 hover:bg-gray-600" : "text-gray-700 hover:bg-gray-100"}`}>Portfolio</NavLink>
+                                        <NavLink to="/portfolio" className={`block px-8 border-y-1 py-2 text-sm ${theme === "dark" ? "text-gray-200 hover:bg-gray-600" : "text-gray-700 hover:bg-gray-100"}`}>Blog</NavLink>
                                     </li>
                                     <li>
                                          <NavLink to="/service" className={`block px-8 border-y-1 py-2 text-sm ${theme === "dark" ? "text-gray-200 hover:bg-gray-600" : "text-gray-700 hover:bg-gray-100"}`}>Service</NavLink>
@@ -78,7 +78,7 @@ export const Header = () => {
                                 <NavLink to="/movie" className={`block py-2 px-3 ${theme === "dark" ? "text-white" : "text-gray-900 rounded hover:bg-white"} md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500`} >Movie</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/portfolio" className={`block py-2 px-3 ${theme === "dark" ? "text-white" : "text-gray-900 rounded hover:bg-white"} md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500`} >Portfolio</NavLink>
+                                <NavLink to="/portfolio" className={`block py-2 px-3 ${theme === "dark" ? "text-white" : "text-gray-900 rounded hover:bg-white"} md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500`} >Blog</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/contact" className={`block py-2 px-3 ${theme === "dark" ? "text-white" : "text-gray-900 rounded hover:bg-white"} md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500`} >Contact</NavLink>

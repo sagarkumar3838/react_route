@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-      <footer className="footer bg-base-200 text-base-content p-10">
+    <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto '>
+      <footer className="footer bg-base-200 text-base-content p-10 items-center ">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>
