@@ -87,13 +87,14 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                   className="absolute inset-0 origin-bottom"
                 >
                   <img
-                    src={"src/components/images/card1.webp"} // Use the standard <img> tag
+                    src={testimonial.src} // Use the standard <img> tag
                     alt={testimonial.name}
                     width={500}
                     height={500}
                     draggable={false}
                     className="h-full w-full rounded-3xl object-cover object-center"
                   />
+                  
                 </motion.div>
               ))}
             </AnimatePresence>

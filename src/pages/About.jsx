@@ -149,20 +149,26 @@ export const About = () => {
 
  const testimonialsData = [
     {
-      src: "/images/card1.webp", // Path relative to the public folder
+      src: "src/components/images/potrait1.jpg", // Path relative to the public folder
       name: "John Doe",
       designation: "Software Engineer",
       quote: "This is an amazing service!",
     },
     {
-      src: "/images/card2.webp",
+      src: "src/components/images/potrait2.jpg",
       name: "Jane Smith",
       designation: "Product Manager",
       quote: "I love using this platform!",
     },
     {
-      src: "/images/card3.webp",
+      src: "src/components/images/potrait3.jpg",
       name: "Alice Johnson",
+      designation: "Designer",
+      quote: "A fantastic experience overall!",
+    },
+    {
+      src: "src/components/images/potrait6.jpg",
+      name: "Niki Johnson",
       designation: "Designer",
       quote: "A fantastic experience overall!",
     },
@@ -187,22 +193,19 @@ export const About = () => {
           variants={containerVariants}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800"
         >
-          Daily Design Reviews, Updates & Constant Communication
+         Discover the Magic of Anime: Reviews, News, and Community
         </motion.h1>
         <motion.p
           variants={containerVariants}
           className="text-lg md:text-xl text-gray-600 max-w-4xl text-center mt-4"
         >
-          We believe that design teams should be deeply integrated with your team,
-          constantly talking through solutions. That's why we never charge extra for
-          face-to-face meetings, calls, or Slack threads and say yes to jumping on
-          daily stand-ups.
+          At AnimeFlix, we are passionate about all things anime! Our mission is to create a vibrant community where fans can come together to share their love for anime, manga, and Japanese culture. Whether you are a seasoned otaku or just starting your journey into the world of anime, you will find a welcoming space here.
         </motion.p>
         <motion.button
           variants={containerVariants}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8"
         >
-          We Join on your Daily Standups
+          Get Your Anime Fix: Binge, Chat, and Cosplay
         </motion.button>
       </motion.div>
 
@@ -341,7 +344,7 @@ export const About = () => {
             duration: 0.9,
             ease: "easeInOut",
           }}
-          className="mt-4 bg-gradient-to-br from-slate-300 to-slate-500 py-8 bg-clip-text text-center text-sm font-medium tracking-tight text-transparent md:text-xl"
+          className="mt-4 bg-gradient-to-br from-slate-300 to-slate-500 py-8 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-xl"
         >
           We invite you to join our community and explore the wonderful world of anime with us. <br /> Whether you want to watch, discuss, or learn more about anime, AnimeWorld is the place for you!
         </motion.p>
