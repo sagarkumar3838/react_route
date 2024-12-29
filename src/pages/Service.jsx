@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CardContainer, CardBody, CardItem, useMouseEnter  } from "../components/UI/CardContainer"
 import Testimonials from '../components/UI/Testimonial';
-
+import DynamicIconCloud from '../components/UI/DynamicIconCloud';
+import OrbitingCirclesDemo from '../components/UI/OrbitingCirclesDemo';
+import { DragCards } from '../components/UI/DragCards';
 
 
 
@@ -192,22 +194,10 @@ export const Service = () => {
 
     {/* Contact Form Section */}
     <section>
-      <h2 className="text-3xl font-bold text-center mb-4">Get in Touch</h2>
-      <form className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
-        <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="name">Name</label>
-          <input className="w-full border border-gray-300 p-2 rounded" type="text" id="name" required />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="email">Email</label>
-          <input className="w-full border border-gray-300 p-2 rounded" type="email" id="email" required />
-        </div>
-        <div class ="mb-4">
-          <label className="block text-gray-700" htmlFor="message">Message</label>
-          <textarea className="w-full border border-gray-300 p-2 rounded" id="message" rows="4" required></textarea>
-        </div>
-        <button className="w-full bg-indigo-500 text-white py-2 rounded" type="submit">Send Message</button>
-      </form>
+      <h2 className="text-4xl font-bold text-center mb-8">Developer Community</h2>
+      
+     <DragCards/>
+
     </section>
   </div>
   )

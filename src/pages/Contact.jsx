@@ -57,7 +57,7 @@ const handleSubmit = (e) => {
 
   return (
    
-    <StyledWrapper className='flex justify-center mt-8 '>
+    <StyledWrapper className='flex justify-center mt-8 mb-4'>
     <Form className="form" method='POST' action="/contact" onSubmit={handleSubmit}>
     <label htmlFor="" className='font-bold text-4xl absolute mb-5 '>CONTACT US :</label>
       <div className="flex ">
