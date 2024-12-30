@@ -1,9 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-
+import { useNavigate } from "react-router-dom";
 export const Card = ({ m }) => {
     const { Poster, imdbID } = m;
+    const navigate = useNavigate(); 
+
+    const handleMovieDetailsClick = () => {
+      navigate("/movie/tt0988824"); // Navigate to the movie details page
+  };
+
     return (
         <StyledWrapper className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
             <div className="parent">
@@ -58,7 +64,7 @@ export const Card = ({ m }) => {
                         </div>
                         <div className="view-more">
                           <NavLink to={`/movie/${imdbID}`}>
-                          <button className="view-more-button">View more</button>
+                          <button onClick={handleMovieDetailsClick} className="view-more-button">View more</button>
                           <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
                           </NavLink>
                         </div>

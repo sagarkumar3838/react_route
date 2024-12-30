@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import logo1 from '/src/components/images/logo1.png'; 
+import logo from '/src/components/images/logo.jpg'; 
 
 export const Header = () => {
     const [theme, setTheme] = useState(
@@ -25,10 +27,14 @@ export const Header = () => {
         <>
             <nav className={`border-gray-200 ${theme === "dark" ? "bg-gray-900" : "bg-white"}`}>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                
                     <NavLink to="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="src/components/images/logo1.png" className="h-10 rounded-full" alt="Logo" />
+                   
+                        <img src={logo1} className="h-10 rounded-full" alt="Logo" />
                         <span className={`self-center text-2xl font-semibold whitespace-nowrap ${theme === "dark" ? "text-white" : "text-gray-900"}`}>AnimeFlix</span>
+                       
                     </NavLink>
+                    
                     <div className="relative flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                         <button
                             type="button"
@@ -38,7 +44,7 @@ export const Header = () => {
                             onClick={toggleDropdown}
                         >
                             <span className="sr-only">Open user menu</span>
-                            <img className="w-8 h-8 rounded-full" src="src/components/images/logo.jpg" alt="user photo" />
+                            <img className="w-8 h-8 rounded-full" src={logo} alt="user photo" />
                         </button>
 
                         {isDropdownOpen && (
@@ -76,6 +82,7 @@ export const Header = () => {
                             </li>
                             <li>
                                 <NavLink to="/movie" className={`block py-2 px-3 ${theme === "dark" ? "text-white" : "text-gray-900 rounded hover:bg-white"} md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500`} >Movie</NavLink>
+                                
                             </li>
                             <li>
                                 <NavLink to="/portfolio" className={`block py-2 px-3 ${theme === "dark" ? "text-white" : "text-gray-900 rounded hover:bg-white"} md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500`} >Blog</NavLink>

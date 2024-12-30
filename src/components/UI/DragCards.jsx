@@ -20,7 +20,7 @@ const Cards = () => {
     <div className="absolute inset-0 z-10 " ref={containerRef}>
       <Card
         containerRef={containerRef}
-        src="public/img/dev1.webp"
+        src="/img/dev1.webp"
         alt="Example image"
         rotate="6deg"
         top="20%"
@@ -29,7 +29,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="public/img/dev2.webp"
+        src="/img/dev2.webp"
         alt="Example image"
         rotate="12deg"
         top="45%"
@@ -38,7 +38,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="public/img/dev3.webp"
+        src="/img/dev3.webp"
         alt="Example image"
         rotate="-6deg"
         top="20%"
@@ -47,7 +47,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="public/img/dev4.webp"
+        src="/img/dev4.webp"
         alt="Example image"
         rotate="8deg"
         top="50%"
@@ -56,7 +56,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="public/img/dev7.webp"
+        src="/img/dev7.webp"
         alt="Example image"
         rotate="1deg"
         top="20%"
@@ -65,7 +65,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="public/img/dev8.webp"
+        src="/img/dev8.webp"
         alt="Example image"
         rotate="-2deg"
         top="35%"
@@ -74,7 +74,7 @@ const Cards = () => {
       />
        <Card
         containerRef={containerRef}
-        src="public/img/dev9.webp"
+        src="/img/dev9.webp"
         alt="Example image"
         rotate="-2deg"
         top="35%"
@@ -83,7 +83,7 @@ const Cards = () => {
       />
        <Card
         containerRef={containerRef}
-        src="public/img/dev10.webp"
+        src="/img/dev10.webp"
         alt="Example image"
         rotate="-2deg"
         top="35%"
@@ -92,7 +92,7 @@ const Cards = () => {
       />
        <Card
         containerRef={containerRef}
-        src="public/img/dev11.webp"
+        src="/img/dev11.webp"
         alt="Example image"
         rotate="-2deg"
         top="35%"

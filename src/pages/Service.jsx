@@ -3,13 +3,8 @@ import { Link } from 'react-router-dom';
 import { CardContainer, CardBody, CardItem, useMouseEnter  } from "../components/UI/CardContainer"
 import Testimonials from '../components/UI/Testimonial';
 import DynamicIconCloud from '../components/UI/DynamicIconCloud';
-import OrbitingCirclesDemo from '../components/UI/OrbitingCirclesDemo';
+
 import { DragCards } from '../components/UI/DragCards';
-
-
-
-
-
 
 
 export const Service = () => {
@@ -32,7 +27,7 @@ export const Service = () => {
       STREAMING
     </CardItem>
     <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-    Watch the latest anime series and movies
+    Join the anime revolution and stream what you love! 
     </CardItem>
     <CardItem translateZ="100" className="w-full mt-4">
       <img
@@ -72,7 +67,7 @@ export const Service = () => {
       MANGA
     </CardItem>
     <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-    Get the new Collection of every MANGA
+    Unleash your imagination with our extensive manga library! 
     </CardItem>
     <CardItem translateZ="100" className="w-full mt-4">
       <img

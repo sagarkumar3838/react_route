@@ -15,6 +15,7 @@ import { useRef } from "react";
 import { useInView } from 'react-intersection-observer';
 import { cn } from "../utils/cn";
 import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
 // Main Home Component
 export const Home = () => {

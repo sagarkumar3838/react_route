@@ -3,11 +3,11 @@ import { motion, useMotionValue, animate } from 'framer-motion';
 import useMeasure from 'react-use-measure';
 export const Testimonials = () => {
   const cards = [
-    { id: 1, name: "Jen S.", image: "src/components/images/test1.jpeg", text: "Lorem ipsum dolor sit amet." },
-    { id: 2, name: "Paul A.", image: "src/components/images/test2.jpeg", text: "Lorem ipsum dolor sit amet." },
-    { id: 3, name: "Cindy J.", image: "src/components/images/test3.jpeg", text: "Lorem ipsum dolor sit amet." },
-    { id: 4, name: "Danica W.", image: "src/components/images/test4.jpeg", text: "Lorem ipsum dolor sit amet." },
-    { id: 5, name: "Peter H.", image: "src/components/images/test5.jpeg", text: "Lorem ipsum dolor sit amet." },
+    { id: 1, name: "Jen S.", image: "src/components/images/test1.jpeg", text: "AnimeFlix has transformed my anime experience! The community discussions make discovering new favorites so much fun.", founder:"Founder of TechBitz" },
+    { id: 2, name: "Paul A.", image: "src/components/images/test2.jpeg", text: "I love the curated content on AnimeFlix! It’s my go-to platform for binge-watching the latest series.", founder:"Founder of MahindraTech" },
+    { id: 3, name: "Cindy J.", image: "src/components/images/test3.jpeg", text: "AnimeFlix offers a fantastic selection of titles! The streaming quality is top-notch, making every episode enjoyable.", founder:"Founder of TCS " },
+    { id: 4, name: "Danica W.", image: "src/components/images/test4.jpeg", text: "AnimeFlix is more than a streaming service; it’s a community! I’ve made great friends through the forums and watch parties.", founder:"Founder of  MICSOFT" },
+    { id: 5, name: "Peter H.", image: "src/components/images/test5.jpeg", text: "The variety of genres on AnimeFlix is amazing! I can always find something that fits my mood.", founder:"Founder of CODEBLOCK" },
    
   ];
 
@@ -94,7 +94,7 @@ useEffect(() => {
           <img src={card.image} alt={`Testimonial image for ${card.name}`} className="w-full h-44 object-cover" />
           <div className="bg-slate-900 text-slate-50 p-4">
             <span className="block font-semibold text-lg mb-1">{card.name}</span>
-            <span className="block mb-3 text-sm font-medium">Founder of XYZ</span>
+            <span className="block mb-3 text-sm font-medium">{card.founder}</span>
             <span className="block text-sm text-slate-300">{card.text}</span>
           </div>
           <span className="text-7xl absolute top-2 right-2 text-slate-700">"</span>
@@ -109,7 +109,7 @@ useEffect(() => {
       {[...cards.slice().reverse(), ...cards.slice().reverse()].map((card) => (
         <motion.div
           key={card.id}
-          className="shrink-0 w-[500px] grid grid-cols-[7rem,_1fr] rounded-lg overflow-hidden relative"
+          className="shrink-0 w-[300px] sm:w-[400px] md:w-[500px] grid grid-cols-[7rem,_1fr] rounded-lg overflow-hidden relative"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -124,7 +124,7 @@ useEffect(() => {
           <img src={card.image} alt={`Testimonial image for ${card.name}`} className="w-full h-44 object-cover" />
           <div className="bg-slate-900 text-slate-50 p-4">
             <span className="block font-semibold text-lg mb-1">{card.name}</span>
-            <span className="block mb-3 text-sm font-medium">Founder of XYZ</span>
+            <span className="block mb-3 text-sm font-medium">{card.founder}</span>
             <span className="block text-sm text-slate-300">{card.text}</span>
           </div>
           <span className="text-7xl absolute top-2 right-2 text-slate-700">"</span>
@@ -154,7 +154,7 @@ useEffect(() => {
           <img src={card.image} alt={`Testimonial image for ${card.name}`} className="w-full h-44 object-cover" />
           <div className="bg-slate-900 text-slate-50 p-4">
             <span className="block font-semibold text-lg mb-1">{card.name}</span>
-            <span className="block mb-3 text-sm font-medium">Founder of XYZ</span>
+            <span className="block mb-3 text-sm font-medium">{card.founder}</span>
             <span className="block text-sm text-slate-300">{card.text}</span>
           </div>
           <span className="text-7xl absolute top-2 right-2 text-slate-700">"</span>

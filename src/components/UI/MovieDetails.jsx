@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import { GetMovieDetails } from "../../api/GetMovieDetails";
+import logo1 from '/src/components/images/logo1.png'; // Adjust the path as necessary
 import styled from 'styled-components';
 
 export const MovieDetails = () => {
@@ -10,11 +10,12 @@ export const MovieDetails = () => {
 
     return (
       <>
+      
       <li>
           <StyledWrapper className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
               <div className="flip flex justify-center items-center h-screen">
                   <div className="content relative">
-                      <div className="front w-[350px] h-[430px] md:w-[400px] lg:w-[450px] xl:w-[500px] 2xl:w-[550px]">
+                      <div className="front w-[250px] h-[430px] md:w-[330px] lg:w-[350px] ">
                           <img src={Poster} alt={Title} className="absolute inset-0 w-full h-full object-fill rounded-sm" />
                           <button className="btn z-10 ml-4 absolute bg-[rgba(235,235,235,0.25)] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[9.5px] rounded-[10px] border border-[rgba(255,255,255,0.18)] py-4 px-5 font-extrabold mb-2 mt-52 text-white">{Title}</button>
                           <h2 className="absolute z-10 text-white ml-4 mt-[270px] font-bold text-xl">Ratings: {imdbRating}</h2>
@@ -40,7 +41,7 @@ const StyledWrapper = styled.div`
   .flip {
     box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
     padding: 1em;
-    width: 350px;
+    width: 250px;
     height: 430px;
     transform-style: preserve-3d;
     transition: 3s ease;
