@@ -5,8 +5,28 @@ import HoverDevCards from "../components/UI/HoverDevCards";
 import { LayoutGrid } from "../components/UI/LayoutGrid";
 import { ExpandableCardDemo } from "../components/UI/ExpandableCardDemo";
 import { ExpandableCardDemo1 } from "../components/UI/ExpandableCardDemo1";
+import Loader from "../components/layout/Loader";
 
 export const Portfolio = () => {
+
+  
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+        // Simulate a loading delay (e.g., fetching data)
+        const timer = setTimeout(() => {
+            setLoading(false);
+        },3000); // Change this duration as needed
+  
+        return () => clearTimeout(timer); // Cleanup the timer
+    }, []);
+  
+    if (loading) {
+        return <Loader />;
+    }
+
+
+
   return (
     <>
       <div className="h-40 relative w-full overflow-hidden bg-gray-700 dark:bg-gray-800 flex flex-col items-center justify-center ">

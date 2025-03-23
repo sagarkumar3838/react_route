@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import logo1 from '/src/components/images/logo1.png'; // Adjust the path as necessary
+import logo1 from '/images/logo1.png'; // Adjust the path as necessary
 import styled from 'styled-components';
 
 export const MovieDetails = () => {

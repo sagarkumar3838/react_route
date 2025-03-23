@@ -3,11 +3,11 @@ import { motion, useMotionValue, animate } from 'framer-motion';
 import useMeasure from 'react-use-measure';
 export const Testimonials = () => {
   const cards = [
-    { id: 1, name: "Jen S.", image: "src/components/images/test1.jpeg", text: "AnimeFlix has transformed my anime experience! The community discussions make discovering new favorites so much fun.", founder:"Founder of TechBitz" },
-    { id: 2, name: "Paul A.", image: "src/components/images/test2.jpeg", text: "I love the curated content on AnimeFlix! It’s my go-to platform for binge-watching the latest series.", founder:"Founder of MahindraTech" },
-    { id: 3, name: "Cindy J.", image: "src/components/images/test3.jpeg", text: "AnimeFlix offers a fantastic selection of titles! The streaming quality is top-notch, making every episode enjoyable.", founder:"Founder of TCS " },
-    { id: 4, name: "Danica W.", image: "src/components/images/test4.jpeg", text: "AnimeFlix is more than a streaming service; it’s a community! I’ve made great friends through the forums and watch parties.", founder:"Founder of  MICSOFT" },
-    { id: 5, name: "Peter H.", image: "src/components/images/test5.jpeg", text: "The variety of genres on AnimeFlix is amazing! I can always find something that fits my mood.", founder:"Founder of CODEBLOCK" },
+    { id: 1, name: "Jen S.", image: "/images/test1.jpeg", text: "AnimeFlix has transformed my anime experience! The community discussions make discovering new favorites so much fun.", founder:"Founder of TechBitz" },
+    { id: 2, name: "Paul A.", image: "/images/test2.jpeg", text: "I love the curated content on AnimeFlix! It’s my go-to platform for binge-watching the latest series.", founder:"Founder of MahindraTech" },
+    { id: 3, name: "Cindy J.", image: "/images/test3.jpeg", text: "AnimeFlix offers a fantastic selection of titles! The streaming quality is top-notch, making every episode enjoyable.", founder:"Founder of TCS " },
+    { id: 4, name: "Danica W.", image: "/images/test4.jpeg", text: "AnimeFlix is more than a streaming service; it’s a community! I’ve made great friends through the forums and watch parties.", founder:"Founder of  MICSOFT" },
+    { id: 5, name: "Peter H.", image: "/images/test5.jpeg", text: "The variety of genres on AnimeFlix is amazing! I can always find something that fits my mood.", founder:"Founder of CODEBLOCK" },
    
   ];
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo1 from '/src/components/images/logo1.png'; 
-import logo from '/src/components/images/logo.jpg'; 
+import logo1 from '/images/logo1.png'; 
+import logo from '/images/logo.jpg'; 
 
 export const Header = () => {
     const [theme, setTheme] = useState(

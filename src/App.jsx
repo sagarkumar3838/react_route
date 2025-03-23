@@ -12,6 +12,8 @@ import { ErrorPage } from './pages/ErrorPage'
 
 import { GetApiData } from './api/GetApiData'
 import { GetMovieDetails } from './api/GetMovieDetails'
+import Loader from './components/layout/Loader'
+
 
 
 
@@ -29,6 +31,7 @@ const App = () => {
         {
           path: "/",
           element: <Home />,
+         
           
         },
         {

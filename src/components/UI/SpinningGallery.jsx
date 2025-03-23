@@ -7,10 +7,10 @@ const SpinningGallery = () => {
   const galleryRef = useRef(null);
 
   const images = [
-    'public\img\col-1_1.jpg',
-    'public\img\col-1_1.jpg',
-    'public\img\col-1_1.jpg',
-    'public\img\col-1_1.jpg',
+    '/img/col-1_1.jpg',
+    '/img/col-1_1.jpg',
+    '/img/col-1_1.jpg',
+    '/img/col-1_1.jpg',
    
   ];
 

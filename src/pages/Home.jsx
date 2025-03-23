@@ -16,11 +16,29 @@ import { useInView } from 'react-intersection-observer';
 import { cn } from "../utils/cn";
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import Loader from "../components/layout/Loader";
 
 // Main Home Component
 export const Home = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      // Simulate a loading delay (e.g., fetching data)
+      const timer = setTimeout(() => {
+          setLoading(false);
+      },3000); // Change this duration as needed
+
+      return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
+
+  if (loading) {
+      return <Loader />;
+  }
+
   return (
     <div className=" dark:bg-slate-800  ">
+    
       <ReactLenis
         root
         options={{
@@ -92,7 +110,7 @@ const CenterImage = () => {
           zIndex: -1,
         }}
       >
-        <source src="src/components/video/bg3.mp4" type="video/webm" />
+        <source src="/video/bg3.mp4" type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </motion.div>
@@ -103,35 +121,35 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[900px]">
       <ParallaxImg
-        src="src/components/images/jujustu.png"
+        src="/images/jujustu.png"
         alt="An example of a space launch"
         start={-200}
         end={200}
         className="w-1/3 cover-fill"
       />
       <ParallaxImg
-        src="src/components/images/naruto-and-sasuke-ivea9e5wh3akps7z.jpg"
+        src="/images/naruto-and-sasuke-ivea9e5wh3akps7z.jpg"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="src/components/images/solo.png"
+        src="/images/solo.png"
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="src/components/images/wp5105985.webp"
+        src="/images/wp5105985.webp"
         alt="An example of a space launch"
         start={-200}
         end={200}
         className="w-2/4 cover-fill"
       />
  <ParallaxImg
-        src="src/components/images/gojo1.png"
+        src="/images/gojo1.png"
         alt="Orbiting satellite"
         start={100}
         end={-100}
@@ -219,37 +237,37 @@ const Card = ({ card }) => {
 
 const cards = [
   {
-    url: "src/components/images/card1.webp",
+    url: "/images/card1.webp",
     title: "Watch Options",
     id: 1,
   },
   {
-    url: "src/components/images/card2.webp",
+    url: "/images/card2.webp",
     title: "Watch Options",
     id: 2,
   },
   {
-    url: "src/components/images/card3.webp",
+    url: "/images/card3.webp",
     title: "Watch Options",
     id: 3,
   },
   {
-    url: "src/components/images/card4.webp",
+    url: "/images/card4.webp",
     title: "Watch Options",
     id: 4,
   },
   {
-    url: "src/components/images/card5.webp",
+    url: "/images/card5.webp",
     title: "Watch Options",
     id: 5,
   },
   {
-    url: "src/components/images/card6.webp",
+    url: "/images/card6.webp",
     title: "Watch Options",
     id: 6,
   },
   {
-    url: "src/components/images/card7.webp",
+    url: "/images/card7.webp",
     title: "Watch Options",
     id: 7,
   },
@@ -262,31 +280,31 @@ const HoverImageLinks = () => {
         <Link
           heading="Best of 2024"
           subheading="The year in review"
-          imgSrc="src\components\images\demonCard.webp"
+          imgSrc="/images/demonCard.webp"
           href="#"
         />
         <Link
           heading="Top picks"
           subheading="TV shows and movies just for you"
-          imgSrc="src\components\images\spiderCard.webp"
+          imgSrc="/images/spiderCard.webp"
           href="#"
         />
         <Link
           heading="Fan Favorites"
           subheading="This week's top TV and movies"
-          imgSrc="src\components\images\soloCards.webp"
+          imgSrc="/images/soloCards.webp"
           href="#"
         />
         <Link
           heading="Popular interests"
           subheading="Browse all genres"
-          imgSrc="src\components\images\jujuCard.webp"
+          imgSrc="/images/jujuCard.webp"
           href="#"
         />
         <Link
           heading="IMDB Originals"
           subheading="Celebrity interviews , trending entertainment stories, and expert analysis  "
-          imgSrc="src\components\images\bleachcard.webp"
+          imgSrc="/images/bleachcard.webp"
           href="#"
         />
       </div>
@@ -526,14 +544,14 @@ export function InfiniteMovingCardsDemo() {
   const testimonials = [
     {
      
-       image: "src/components/images/logo7.png",
+       image: "/images/logo7.png",
        name1: " logo1"
      
     },
    
     {
       
-      image: "src/components/images/logo10.png",
+      image: "/images/logo10.png",
        name1: " logo3",
        
 
@@ -541,31 +559,31 @@ export function InfiniteMovingCardsDemo() {
     },
     {
    
-      image: "src/components/images/logo5.png",
+      image: "/images/logo5.png",
        name1: " logo4"
       
     },
     {
       
-      image: "src/components/images/logo6.png",
+      image: "/images/logo6.png",
        name1: " logo5"
       
     },
     {
       
-      image: "src/components/images/logo13.png",
+      image: "/images/logo13.png",
        name1: " logo6"
       
     },
     {
       
-      image: "src/components/images/logo12.png",
+      image: "/images/logo12.png",
        name1: " logo7"
       
     },
     {
       
-      image: "src/components/images/logo11.png",
+      image: "/images/logo11.png",
        name1: " logo8"
       
     },

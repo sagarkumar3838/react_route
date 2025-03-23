@@ -31,7 +31,7 @@ export const Service = () => {
     </CardItem>
     <CardItem translateZ="100" className="w-full mt-4">
       <img
-        src="src/components/images/streaming.webp"
+        src="/images/streaming.webp"
         height={1000}
         width={1000}
         className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -71,7 +71,7 @@ export const Service = () => {
     </CardItem>
     <CardItem translateZ="100" className="w-full mt-4">
       <img
-        src="src/components/images/manga.webp"
+        src="/images/manga.webp"
         height={1000}
         width={1000}
         className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -112,7 +112,7 @@ export const Service = () => {
     </CardItem>
     <CardItem translateZ="100" className="w-full mt-4">
       <img
-        src="src/components/images/experiential.webp"
+        src="/images/experiential.webp"
         height={1000}
         width={1000}
         className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -151,7 +151,7 @@ export const Service = () => {
     </CardItem>
     <CardItem translateZ="100" className="w-full mt-4">
       <img
-        src="src/components/images/theatrical.webp"
+        src="/images/theatrical.webp"
         height={1000}
         width={1000}
         className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"

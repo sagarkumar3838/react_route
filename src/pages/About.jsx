@@ -54,25 +54,25 @@ export const About = () => {
 
   const testimonialsData = [
     {
-      src: "src/components/images/potrait1.jpg",
+      src: "/images/potrait1.jpg",
       name: "John Doe",
       designation: "Software Engineer",
       quote: "This is an amazing service!",
     },
     {
-      src: "src/components/images/potrait2.jpg",
+      src: "/images/potrait2.jpg",
       name: "Jane Smith",
       designation: "Product Manager",
       quote: "I love using this platform!",
     },
     {
-      src: "src/components/images/potrait3.jpg",
+      src: "/images/potrait3.jpg",
       name: "Alice Johnson",
       designation: "Designer",
       quote: "A fantastic experience overall!",
     },
     {
-      src: "src/components/images/potrait6.jpg",
+      src: "/images/potrait6.jpg",
       name: "Niki Johnson",
       designation: "Designer",
       quote: "A fantastic experience overall!",
@@ -127,7 +127,7 @@ export const About = () => {
             </p>
           </div>
           <div>
-            <img src="src/components/images/mission.png" alt="Our Mission" className="w-full h-auto" />
+            <img src="/images/mission.png" alt="Our Mission" className="w-full h-auto" />
           </div>
         </section>
 
@@ -146,7 +146,7 @@ export const About = () => {
                 <div
                   className="absolute inset-0 saturate-100 md:saturate-0 md:group-hover:saturate-100 group-hover:scale-110 transition-all duration-500"
                   style={{
-                    backgroundImage: 'url("src/components/images/1.jpg")',
+                    backgroundImage: 'url("/images/1.jpg")',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center center',
                   }}
@@ -161,7 +161,7 @@ export const About = () => {
                 <div
                   className="absolute inset-0 saturate-100 md:saturate-0 md:group-hover:saturate-100 group-hover:scale-110 transition-all duration-500"
                   style={{
-                    backgroundImage: 'url("src/components/images/2.jpg")',
+                    backgroundImage: 'url("/images/2.jpg")',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center center',
                   }}
@@ -176,7 +176,7 @@ export const About = () => {
                 <div
                   className="absolute inset-0 saturate-100 md:saturate-0 md:group-hover:saturate-100 group-hover:scale-110 transition-all duration-500"
                   style={{
-                    backgroundImage: 'url("src/components/images/3.png")',
+                    backgroundImage: 'url("/images/3.png")',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center center',
                   }}
@@ -191,7 +191,7 @@ export const About = () => {
                 <div
                   className="absolute inset-0 saturate-100 md:saturate-0 md:group-hover:saturate-100 group-hover:scale-110 transition-all duration-500"
                   style={{
-                    backgroundImage: 'url("src/components/images/6.jpeg")',
+                    backgroundImage: 'url("/images/6.jpeg")',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center center',
                   }}
